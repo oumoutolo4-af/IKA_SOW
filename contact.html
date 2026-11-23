@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IKA SOW — Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">IKA SOW</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir ou fermer le menu">
+        Menu
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow">Prise de contact</p>
+        <h1 id="contact-title" class="page-title">Contacter IKA SOW</h1>
+        <p class="section-lead">
+          Utilisez le formulaire ci-dessous pour envoyer votre demande ou consultez les coordonnées de l'entreprise.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Coordonnées et formulaire de contact">
+      <div class="container contact-layout">
+        <aside class="contact-info" aria-labelledby="info-title">
+          <h2 id="info-title" class="card-heading">Coordonnées de l'entreprise</h2>
+          <p class="info-notice">
+            Certaines informations sont indiquées comme « à confirmer » en attendant leur validation définitive.
+          </p>
+
+          <dl class="info-list">
+            <div class="info-item">
+              <dt>Entreprise</dt>
+              <dd>IKA SOW</dd>
+            </div>
+            <div class="info-item">
+              <dt>Téléphone</dt>
+              <dd>À confirmer</dd>
+            </div>
+            <div class="info-item">
+              <dt>Adresse</dt>
+              <dd>À confirmer</dd>
+            </div>
+            <div class="info-item">
+              <dt>Autres informations</dt>
+              <dd>Adresse e-mail et horaires d'ouverture à confirmer</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <div class="contact-form-card">
+          <h2 class="card-heading">Formulaire de contact</h2>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="fullname">Nom complet <span aria-hidden="true">*</span></label>
+              <input type="text" id="fullname" name="fullname" required placeholder="Votre nom et prénom" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Adresse e-mail <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="exemple@domaine.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Numéro de téléphone</label>
+              <input type="tel" id="phone" name="phone" placeholder="À renseigner (optionnel)" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre besoin ou le bien qui vous intéresse..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+
+            <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">IKA SOW</p>
+        <p class="footer-note">Site vitrine immobilier — Informations et coordonnées à confirmer.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
